@@ -9,12 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+The input pins are connected to a set of different logic gates, which lead to the outputs. One logic layer, very simple.
 
 ## How to test
 
-Explain how to use your project
+No clock is needed. Simply play with the inputs, and see whether you can figure out from the truth table which pis correspond to which gate.
+
+SPOILER: The solution is:
+
+<solution>
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Connect 16 switches to the input and multifunction pins, the 8 outputs are hooked up to one LED each.

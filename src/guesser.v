@@ -1,15 +1,15 @@
 /*
- * Copyright (c) 2024 Your Name
+ * Copyright (c) 2024 Fabio Ramirez Stern
  * SPDX-License-Identifier: Apache-2.0
  */
 
 `define default_netname none
 
-module tt_um_example (
-    input  wire [7:0] ui_in,    // Dedicated inputs
+module tt_um_faramire_gate_guesser (
+    input  wire [7:0] ui_in,    // Dedicated inputs:   switches 0 to 7
     output wire [7:0] uo_out,   // Dedicated outputs
-    input  wire [7:0] uio_in,   // IOs: Input path
-    output wire [7:0] uio_out,  // IOs: Output path
+    input  wire [7:0] uio_in,   // IOs: Input path:    switches 8 to F
+    output wire [7:0] uio_out,  // IOs: Output path:   gate outputs
     output wire [7:0] uio_oe,   // IOs: Enable path (active high: 0=input, 1=output)
     input  wire       ena,      // will go high when the design is enabled
     input  wire       clk,      // clock
@@ -17,7 +17,10 @@ module tt_um_example (
 );
 
   // All output pins must be assigned. If not used, assign to 0.
-  assign uo_out  = ui_in + uio_in;  // Example: ou_out is the sum of ui_in and uio_in
+
+    //TODO
+
+  assign uo_out  = 0;
   assign uio_out = 0;
   assign uio_oe  = 0;
 

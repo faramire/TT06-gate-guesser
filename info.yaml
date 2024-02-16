@@ -43,7 +43,7 @@ pinout:
   uio[0]: "switch8"
   uio[1]: "switch9"
   uio[2]: "switchA"
-  uio[3]: "switchB
+  uio[3]: "switchB"
   uio[4]: "switchC"
   uio[5]: "switchD"
   uio[6]: "switchE"

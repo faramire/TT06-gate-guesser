@@ -6,7 +6,7 @@ from cocotb.clock import Clock
 from cocotb.triggers import ClockCycles
 
 @cocotb.test()
-async def test_adder(dut):
+async def test_guesser(dut):
   dut._log.info("Start")
   
   # Our example module doesn't use clock and reset, but we show how to use them here anyway.
@@ -24,8 +24,8 @@ async def test_adder(dut):
 
   # Set the input values, wait one clock cycle, and check the output
   dut._log.info("Test 1")
-  dut.ui_in.value = int('01101111', 2)
-  dut.uio_in.value = int('11001011', 2)
+  dut.ui_in.value = int('11110110', 2)
+  dut.uio_in.value = int('11101101', 2)
 
   await ClockCycles(dut.clk, 1)
 
@@ -33,8 +33,8 @@ async def test_adder(dut):
 
   # Set the input values, wait one clock cycle, and check the output
   dut._log.info("Test 2")
-  dut.ui_in.value = int('10110111', 2)
-  dut.uio_in.value = int('10110000', 2)
+  dut.ui_in.value = int('11010011', 2)
+  dut.uio_in.value = int('00001101', 2)
 
   await ClockCycles(dut.clk, 1)
 

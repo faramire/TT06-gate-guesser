@@ -25,7 +25,7 @@ async def test_guesser(dut):
   # Set the input values, wait one clock cycle, and check the output
   dut._log.info("Test 1")
   dut.ui_in.value = int('11110110', 2)
-  dut.uio_in.value = int('11101101', 2)
+  dut.uio_in.value = int('11010011', 2)
 
   await ClockCycles(dut.clk, 1)
 
@@ -33,7 +33,7 @@ async def test_guesser(dut):
 
   # Set the input values, wait one clock cycle, and check the output
   dut._log.info("Test 2")
-  dut.ui_in.value = int('11010011', 2)
+  dut.ui_in.value = int('11101101', 2)
   dut.uio_in.value = int('00001101', 2)
 
   await ClockCycles(dut.clk, 1)

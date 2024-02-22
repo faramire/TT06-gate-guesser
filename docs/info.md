@@ -9,15 +9,16 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-The input pins are connected to a set of different logic gates, which lead to the outputs. Only one logic layer of combinatoric logic
+The input pins are connected to a set of different logic gates, which lead to the outputs. Only one logic layer of combinatoric logic.
+Each input is hooked up to only one gate.
 
 ## How to test
 
-No clock, enable or reset is used. As this is simply one layer of combinatoric logic, you can simply check against a precalculated truth table.
+No clock, enable or reset is used. As this is just one layer of combinatoric logic, you can simply check against a precalculated truth table.
 
 ## External hardware
 
-Connect 16 switches to the input and multifunction pins, the 8 outputs are hooked up to one LED each.
+Connect 16 switches to the input and inout pins, the 8 outputs are hooked up to one LED each (or other display hardware of your choice).
 
 The solution is:
 

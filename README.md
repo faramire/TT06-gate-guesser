@@ -2,28 +2,20 @@
 
 # Tiny Tapeout Gate Guesser
 
-- [Read the documentation for project](docs/info.md)
+[Tiny Tapeout documentation](docs/info.md)
+
+This is a small and delibaretly kept simple verilog project to be realised in a "rideshare" open source ASIC organised by Tiny Tapeout.
+The aim is to make the most simple project as a first step, however this can also work as a debugging tool if the internal arrangements are known.
+
+16 inputs are chaotically hooked onto 8 logic gates driving the outputs. If the connections are known, one can very easily test and verify one's setup. If they are not known, one can play a guessing game of what gate is connected to which inputs. It can also be used as a small demonstration of how semiconductors work, for example at trade shows, open door days etc.
+
+## How to use
+
+You will need the Tiny Tapeout 6 PCB. See the [Tiny Tapeout documentation](docs/info.md).
 
 ## What is Tiny Tapeout?
 
 TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip.
+Each run, one or more tiles can be bought on the overall chip and filled with custom designs.
 
-To learn more and get started, visit https://tinytapeout.com.
-
-## Verilog Projects
-
-1. Add your Verilog files to the `src` folder.
-2. Edit the [info.yaml](info.yaml) and update information about your project, paying special attention to the `source_files` and `top_module` properties. If you are upgrading an existing Tiny Tapeout project, check out our [online info.yaml migration tool](https://tinytapeout.github.io/tt-yaml-upgrade-tool/).
-3. Edit [docs/info.md](docs/info.md) and add a description of your project.
-4. Optionally, add a testbench to the `test` folder. See [test/README.md](test/README.md) for more information.
-
-The GitHub action will automatically build the ASIC files using [OpenLane](https://www.zerotoasiccourse.com/terminology/openlane/).
-
-
-## Resources
-
-- [FAQ](https://tinytapeout.com/faq/)
-- [Digital design lessons](https://tinytapeout.com/digital_design/)
-- [Learn how semiconductors work](https://tinytapeout.com/siliwiz/)
-- [Join the community](https://tinytapeout.com/discord)
-- [Build your design locally](https://docs.google.com/document/d/1aUUZ1jthRpg4QURIIyzlOaPWlmQzr-jBn3wZipVUPt4)
+To learn more and get started yourself, visit https://tinytapeout.com and/or [Join the community](https://tinytapeout.com/discord).
